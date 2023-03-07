@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Livros | Hermes Bookstore</title>
+        <title>Creche Canguaretama</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <link rel = "stylesheet" href = "navbar.css">
         <link rel = "stylesheet" href = "style.css">
@@ -18,7 +18,7 @@
         margin: 20px;
         padding: 0;
         font-family: 'Inter', sans-serif;
-        background-color: #252c3a;
+        background-color: #1a546e;
         }
 
         p {
@@ -72,35 +72,23 @@
     </head>
 
     <body>
+
+    <center>
+        <img src="imagens/slogan.png" width="500" height="auto" alt="slogan">
+    </center>
       <!--Barra de navegação-->
       <nav class="col-md col-xl navbar navbar-expand-lg navbar-dark bg-dark" id = "navbar">
         <div class="container-fluid">
-            <a class="logonav" href="paginainicial.html"><img src="imagens/logo2_1.png" width="80" height="auto" alt="ícone de livro"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+           
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+             
               <li class="nav-item" style = "margin: 20px;">
-                <a class="nav-link" href="paginainicial.html">HOME</a>
+                <a class="nav-link" href="bibliotecavirtual.html">LISTA DE LIVROS</a>
               </li>
-              <li class="nav-item" style = "margin: 20px;">
-                <a class="nav-link" href="listadelivros.html">LISTA DE LIVROS</a>
-              </li>
-              <li class="nav-item" style = "margin: 20px;">
-                <a class="nav-link" href="cadastro.html">CADASTRO</a>
-              </li>
-              <li class="nav-item" style = "margin: 20px;">
-                <a class="nav-link" href="login.html">LOGIN</a>
-              </li>
-              <li class="nav-item" style = "margin: 20px;">
-                <a class="nav-link" href="perfil.html">PERFIL</a>
-              </li>
+              
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Digite sua busca" aria-label="Search">
-              <button class="btn btn-dark" type="submit">Buscar</button>
-            </form>
+            
           </div>
         </div>
       </nav>
@@ -109,208 +97,139 @@
         <h1>LISTA DE LIVROS</h1>
         <br/>
 
-        <!--Filtro-->
-        <section id = "filtro">
-          <h3>Filtrar por: </h3>
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label" id = "palavra-chave"><h6>Palavra-chave:</h6></label>
-            <input type="email" class="form-control" id="exampleFormControlInput1">
-          </div>
+       
 
-          <div>
-            <label for="exampleInputEmail1" class="form-label"><h6>Por gênero: </h6></label>
-
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">
-                <h6>Fantasia</h6>
-              </label>
-            </div>
-
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-              <label class="form-check-label" for="flexRadioDefault2">
-                <h6>Ficção científica</h6>
-              </label>
-            </div>
-
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-              <label class="form-check-label" for="flexRadioDefault3">
-                <h6>Romance</h6>
-              </label>
-            </div>
-
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
-              <label class="form-check-label" for="flexRadioDefault4">
-                <h6>Suspense</h6>
-              </label>
-            </div>
-
-            <div>
-              <label for="exampleInputEmail1" class="form-label"><h6>Por preço: </h6></label>
-              
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
-                  <h6>De R$ 20,00 a R$ 25,00</h6>
-                </label>
-              </div>
-
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
-                  <h6>De R$ 25,00 a R$ 35,00</h6>
-                </label>
-              </div>
-
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
-                  <h6>De R$ 35,00 a R$ 50,00</h6>
-                </label>
-              </div>
-
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
-                  <h6>Mais de R$ 50,00</h6>
-                </label>
-              </div>
-              <br/>
-
-        </section>
+       
 
         <!--Lista de livros-->
         <center>
         <div class = "row">
 
             <div class = "col-md-6 col-xl-3">
-              <a href="detalhes/LabFauno_dts.html">
+              <a href="#">
                 <div class="card" style="width: 18rem;">
-                    <img src = "imagens/LabFauno.jpg" class= "card-img-top" alt="Capa do livro O Labirinto do Fauno">
+                    <img src = "imagens/A ASSEMBLEIA DOS RATOS.jpg" class= "card-img-top" alt="Capa do livro">
                     <div class="card-body">
-              </a>  <p class="card-text"><center>O Labirinto do Fauno</center></p>
+              </a>  <p class="card-text"><center>A assembleia dos ratos</center></p>
                     </div>
                   </div>
                   <br/>
             </div>
 
             <div class = "col-md-6 col-xl-3">
-              <a href="detalhes/GOT_dts.html">
+              <a href="#">
                 <div class="card" style="width: 18rem;">
-                    <img src="imagens/got.jpg" class="card-img-top" alt="Capa do livro A Guerra dos Tronos">
+                    <img src="imagens/A AVENTURA DE TOBI.jpg" class="card-img-top" alt="Capa do livro ">
                     <div class="card-body">
-              </a>  <p class="card-text"><center>A Guerra dos Tronos</center></p>
+              </a>  <p class="card-text"><center>A aventura de Tobi</center></p>
                     </div>
                   </div>
                   <br/>
             </div>
 
             <div class = "col-md-6 col-xl-3">
-              <a href="detalhes/SomOssos_dts.html">
+              <a href="#">
                 <div class="card" style="width: 18rem;">
-                    <img src="imagens/SombraOssos.jpg" class="card-img-top" alt="Capa do livro Sombra e Ossos">
+                    <img src="imagens/A BEXIGA DE BORRACHA.png" class="card-img-top" alt="Capa do livro ">
                     <div class="card-body">
-              </a>  <p class="card-text"><center>Sombra e Ossos</center></p>
+              </a>  <p class="card-text"><center>A bexiga de borracha</center></p>
                     </div>
                   </div>
             </div>
 
             <div class = "col-md-6 col-xl-3">
-              <a href="detalhes/2001_dts.html">
+              <a href="#">
                 <div class="card" style="width: 18rem;">
-                    <img src="imagens/2001.jpg" class="card-img-top" alt="Capa do livro 2001: Uma Odisseia no Espaço">
+                    <img src="imagens/A DINOSSAURA DEISE.jpg" class="card-img-top" alt="Capa do livro ">
                     <div class="card-body">
-              </a>  <p class="card-text"><center>2001: Uma Odisseia no Espaço</center></p>
+              </a>  <p class="card-text"><center>A dinossaura Deise</center></p>
                     </div>
                   </div>
                   </div>
 
                 <div class = "col-md-6 col-xl-3">
-                  <a href="detalhes/FrankS_dts.html">
+                  <a href="#">
                     <div class="card" style="width: 18rem;">
-                        <img src="imagens/frankenstein.png" class="card-img-top" alt="Capa do livro Frankenstein">
+                        <img src="imagens/A FADA MALENA.jpg" class="card-img-top" alt="Capa do livro">
                         <div class="card-body">
-                  </a>  <p class="card-text"><center>Frankenstein</center></p>
+                  </a>  <p class="card-text"><center>A fada Malena</center></p>
                         </div>
                       </div>
                       <br/>
                 </div>
     
                 <div class = "col-md-6 col-xl-3">
-                  <a href="detalhes/IluTempo_dts.html">
+                  <a href="#">
                     <div class="card" style="width: 18rem;">
-                        <img src="imagens/IlusaoTempo.jpg" class="card-img-top" alt="Capa do livro A Ilusão do Tempo">
+                        <img src="imagens/A FAZENDA DA PORCA ROSA.jpg" class="card-img-top" alt="Capa do livro">
                         <div class="card-body">
-                   </a> <p class="card-text"><center>A Ilusão do Tempo</center></p>
+                   </a> <p class="card-text"><center>A fazenda da porca rosa</center></p>
                         </div>
                       </div>
                 </div>
     
     
                 <div class = "col-md-6 col-xl-3">
-                  <a href="detalhes/UmNosProx_dts.html">
+                  <a href="#">
                     <div class="card" style="width: 18rem;">
-                        <img src="imagens/UmDeNos.jpg" class="card-img-top" alt="Capa do livro Um de nós é o próximo">
+                        <img src="imagens/A GALINHA DOS OVOS DE OURO.jpg" class="card-img-top" alt="Capa do livro ">
                         <div class="card-body">
-                  </a>  <p class="card-text"><center>Um de nós é o próximo</center></p>
+                  </a>  <p class="card-text"><center>A galinha dos ovos de ouro</center></p>
                         </div>
                       </div>
                 </div>
     
     
                 <div class = "col-md-6 col-xl-3">
-                  <a href="detalhes/AssExprOri_dts.html">
+                  <a href="#">
                     <div class="card" style="width: 18rem;">
-                        <img src="imagens/ExpressoOriente.jpg" class="card-img-top" alt="Capa do livro Assassinato no Expresso do Oriente">
+                        <img src="imagens/A GATINHA CURIOSA.jpg" class="card-img-top" alt="Capa do livro ">
                         <div class="card-body">
-                  </a>  <p class="card-text"><center>Assassinato no Expresso do Oriente</center></p>
+                  </a>  <p class="card-text"><center>A gatinha curiosa</center></p>
                         </div>
                       </div>
                 </div>
     
     
                 <div class = "col-md-6 col-xl-3">
-                  <a href="detalhes/CaixaPass_dts.html">
+                  <a href="#">
                     <div class="card" style="width: 18rem;">
-                        <img src="imagens/CaixaDePassaros.jpg" class="card-img-top" alt="Capa do livro Caixa de Pássaros">
+                        <img src="imagens/A HISTÓRIA DA TARTARUGA.jpg" class="card-img-top" alt="Capa do livro ">
                         <div class="card-body">
-                  </a>  <p class="card-text"><center>Caixa de Pássaros</center></p>
+                  </a>  <p class="card-text"><center>A história da tartaruga</center></p>
                         </div>
                       </div>
                 </div>
     
     
                 <div class = "col-md-6 col-xl-3">
-                  <a href="detalhes/OrgPre_dts.html">
+                  <a href="#">
                     <div class="card" style="width: 18rem;">
-                        <img src="imagens/OrgPre.jpg" class="card-img-top" alt="Capa do livro Orgulho e Preconceito">
+                        <img src="imagens/A JOANINHA.jpg" class="card-img-top" alt="Capa do livro">
                         <div class="card-body">
-                  </a>  <p class="card-text"><center>Orgulho e Preconceito</center></p>
+                  </a>  <p class="card-text"><center>A joaninha</center></p>
                         </div>
                       </div>
                 </div>
     
     
                 <div class = "col-md-6 col-xl-3">
-                  <a href="detalhes/7mEH_dts.html">
+                  <a href="#">
                     <div class="card" style="width: 18rem;">
-                        <img src="imagens/EvelynHugo.jpg" class="card-img-top" alt="Capa do livro Os sete maridos de Evelyn Hugo">
+                        <img src="imagens/A LAGOA GRINALDA.jpg" class="card-img-top" alt="Capa do livro">
                         <div class="card-body">
-                  </a>  <p class="card-text"><center>Os sete maridos de Evelyn Hugo</center></p>
+                  </a>  <p class="card-text"><center>A lagoa Grinalda</center></p>
                         </div>
                       </div>
                 </div>
     
     
                 <div class = "col-md-6 col-xl-3">
-                  <a href="detalhes/CulpaEstre_dts.html">
+                  <a href="#">
                     <div class="card" style="width: 18rem;">
-                        <img src="imagens/CulpaEstrelas.jpg" class="card-img-top" alt="Capa do livro A Culpa é Das Estrelas">
+                        <img src="imagens/A LEBRE E A TARTARUGA.jpg" class="card-img-top" alt="Capa do livro">
                         <div class="card-body">
-                  </a>  <p class="card-text"><center>A Culpa é Das Estrelas</center></p>
+                  </a>  <p class="card-text"><center>A lebre e a tartaruga</center></p>
                         </div>
                       </div>
                 </div>
